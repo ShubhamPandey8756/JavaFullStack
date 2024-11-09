@@ -1,0 +1,37 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+class Mobile{
+    String  brand;
+    int price;
+    
+   static String name;
+    Mobile(String b,int p){
+        brand=b;
+        price=p;
+        System.out.println("constructor called");
+    }
+    public static void show(Mobile obj){
+        System.out.println(obj.brand+":"+obj.price);
+    }
+    
+}
+
+public class Main
+{
+	 public static void main(String[] args) {
+	     
+        Mobile m1=new Mobile("Nokia",5000);
+        Mobile m2=new Mobile("Apple",50000);
+        Mobile.show(m2);
+            
+    }
+        
+        
+  }
