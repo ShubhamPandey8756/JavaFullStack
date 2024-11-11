@@ -1,0 +1,18 @@
+abstract class A{
+   public abstract void show(){
+        System.out.println("hello world in  A");
+   }
+}
+public class Demo{
+    public static void main(String []args){
+        
+          A obj=new A(){
+            public  void show(){
+            System.out.println("hello world in  A");
+          }
+        };
+      // this is what we are not creating the object of abstract class a we are creating the object of the inner class
+
+        
+         }
+}
